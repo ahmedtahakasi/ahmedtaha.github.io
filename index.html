@@ -1,0 +1,1219 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-id="th-modified">Taha | Lead Outbound Specialist · ATK Leads</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #ffffff;
+      --surface: #f7f7f5;
+      --border: #e8e8e4;
+      --navy: #0f1729;
+      --blue: #4B8BFF;
+      --blue-soft: #eef3ff;
+      --green: #22c55e;
+      --green-soft: #f0fdf4;
+      --text-primary: #1a1a1a;
+      --text-secondary: #555;
+      --text-muted: #8A94A6;
+      --tag-bg: #f0f4ff;
+      --tag-text: #3b6fd4;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      font-size: 15px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── COVER ──────────────────────────────────── */
+    .cover {
+      background: linear-gradient(135deg, #0f1729 0%, #1a2744 60%, #0d2154 100%);
+      padding: 80px 40px 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 80% 40%, rgba(75,139,255,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cover-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cover-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cover-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 2px;
+      background: var(--blue);
+      border-radius: 2px;
+    }
+
+    .cover-name {
+      font-size: clamp(36px, 6vw, 58px);
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+    }
+
+    .cover-name span {
+      color: var(--blue);
+    }
+
+    .cover-subtitle {
+      font-size: 17px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 36px;
+      max-width: 480px;
+      line-height: 1.6;
+    }
+
+    .cover-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(75,139,255,0.12);
+      border: 1px solid rgba(75,139,255,0.25);
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .badge-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--blue);
+      flex-shrink: 0;
+    }
+
+    .cover-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--blue);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 11px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+      letter-spacing: 0.01em;
+    }
+
+    .cover-cta:hover { opacity: 0.85; }
+
+    /* ─── PIPELINE SIGNATURE ELEMENT ─────────────── */
+    .pipeline-section {
+      background: var(--navy);
+      padding: 36px 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .pipeline-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .pipeline-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    .pipeline-svg-wrap {
+      width: 100%;
+      overflow: visible;
+    }
+
+    /* ─── MAIN CONTENT ────────────────────────────── */
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 40px 100px;
+    }
+
+    /* ─── SECTION BLOCKS ─────────────────────────── */
+    .block {
+      margin-bottom: 56px;
+    }
+
+    .block-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .block-icon {
+      width: 28px; height: 28px;
+      border-radius: 7px;
+      background: var(--blue-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .block-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* ─── INTRO CALLOUT ──────────────────────────── */
+    .intro-callout {
+      background: var(--surface);
+      border-left: 3px solid var(--blue);
+      border-radius: 0 8px 8px 0;
+      padding: 20px 24px;
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text-primary);
+    }
+
+    .intro-callout strong { color: var(--navy); }
+
+    /* ─── WHAT I DO ──────────────────────────────── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .service-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .service-card:hover {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px var(--blue-soft);
+    }
+
+    .service-icon {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .service-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .service-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+
+    /* ─── PROCESS ────────────────────────────────── */
+    .process-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+    }
+
+    .process-list::before {
+      content: '';
+      position: absolute;
+      left: 19px;
+      top: 0; bottom: 0;
+      width: 2px;
+      background: var(--border);
+    }
+
+    .process-item {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      padding: 18px 0;
+      position: relative;
+    }
+
+    .process-num {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--blue);
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .process-content { flex: 1; padding-top: 6px; }
+
+    .process-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 3px;
+    }
+
+    .process-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* ─── TOOLS ─────────────────────────────────── */
+    .tools-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tool-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 7px 13px;
+      border-radius: 6px;
+      border: 1px solid #d4e0ff;
+    }
+
+    .tool-emoji { font-size: 14px; }
+
+    /* ─── SAMPLE WORK / CASE ─────────────────────── */
+    .case-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 16px;
+    }
+
+    .case-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 14px;
+      gap: 16px;
+    }
+
+    .case-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .case-niche {
+      font-size: 11px;
+      font-weight: 600;
+      background: var(--green-soft);
+      color: #16a34a;
+      padding: 4px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    .case-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+
+    .case-stats {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .stat-value {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.02em;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ─── OFFER TIERS ────────────────────────────── */
+    .tiers-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 14px;
+    }
+
+    .tier-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px 20px;
+      position: relative;
+    }
+
+    .tier-card.featured {
+      border-color: var(--blue);
+      background: var(--blue-soft);
+    }
+
+    .tier-featured-badge {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--blue);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 3px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .tier-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .tier-price {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.02em;
+      margin-bottom: 4px;
+    }
+
+    .tier-cycle {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .tier-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .tier-features li {
+      font-size: 12px;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+      line-height: 1.4;
+    }
+
+    .tier-check {
+      color: var(--green);
+      font-size: 12px;
+      margin-top: 1px;
+      flex-shrink: 0;
+    }
+
+    /* ─── CTA BLOCK ──────────────────────────────── */
+    .cta-block {
+      background: linear-gradient(135deg, #0f1729 0%, #1a2744 100%);
+      border-radius: 14px;
+      padding: 40px 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .cta-text h2 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+
+    .cta-text p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .cta-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 11px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn-ghost {
+      background: rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.75);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 11px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    /* ─── FOOTER ─────────────────────────────────── */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 24px 40px;
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-brand {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+
+    .footer-brand span { color: var(--blue); }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer-links a:hover { color: var(--blue); }
+
+    /* ─── DIVIDER ────────────────────────────────── */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 0 0 56px;
+    }
+
+    /* ─── TESTIMONIALS ───────────────────────────── */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .testimonial-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px 22px 18px;
+      position: relative;
+    }
+
+    .testimonial-card.featured-t {
+      background: var(--blue-soft);
+      border-color: #c5d9ff;
+      grid-column: 1 / -1;
+    }
+
+    .quote-mark {
+      font-size: 42px;
+      line-height: 1;
+      color: var(--blue);
+      font-family: Georgia, serif;
+      margin-bottom: 10px;
+      opacity: 0.5;
+    }
+
+    .testimonial-text {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-primary);
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+
+    .testimonial-card.featured-t .testimonial-text {
+      font-size: 15px;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .author-avatar {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue) 0%, #2563eb 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .author-info { flex: 1; }
+
+    .author-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .author-role {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .stars {
+      font-size: 12px;
+      color: #f59e0b;
+      letter-spacing: 1px;
+      margin-left: auto;
+    }
+
+    /* ─── FAQ ────────────────────────────────────── */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:last-child { border-bottom: none; }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 18px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      text-align: left;
+      gap: 16px;
+      transition: background 0.15s;
+    }
+
+    .faq-question:hover { background: var(--surface); }
+
+    .faq-q-text {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.4;
+    }
+
+    .faq-chevron {
+      font-size: 12px;
+      color: var(--text-muted);
+      flex-shrink: 0;
+      transition: transform 0.25s;
+    }
+
+    .faq-item.open .faq-chevron {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.2s;
+      padding: 0 22px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding: 0 22px 18px;
+    }
+
+    /* ─── RESPONSIVE ─────────────────────────────── */
+    @media (max-width: 640px) {
+      .cover { padding: 60px 24px 48px; }
+      .page { padding: 40px 24px 80px; }
+      .pipeline-section { padding: 28px 24px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .tiers-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .testimonial-card.featured-t { grid-column: 1; }
+      .cta-block { padding: 28px 24px; }
+      .footer { padding: 20px 24px; }
+      .cover-name { font-size: 36px; }
+      .step-label { font-size: 9px; }
+    }
+  </style>
+<meta property="og:title" content="Taha | Lead Outbound Specialist · ATK Leads" data-id="th-modified"><meta property="og:image" content="https://tiiny.host/assets/logo-purple-bg.png" data-id="th-modified"><meta property="og:image:width" content="1501" data-id="th-modified"><meta property="og:image:height" content="1501" data-id="th-modified"><meta property="og:image:type" content="image/png" data-id="th-modified"><meta property="og:url" content="https://atkleads-portfolio.tiiny.site/" data-id="th-modified"><meta property="og:type" content="website" data-id="th-modified"><script type="text/javascript" src="https://tiiny.host/ad-script.js"></script><script defer data-domain="atkleads-portfolio.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script></head>
+<body><div style="position: fixed !important; bottom: 0% !important; left: 0% !important; right: 0% !important; width: 100% !important; height: 55px !important; z-index: 9999 !important;"><a href="https://tiiny.host?ref=free-site">
+    <div style="padding: 10px !important; height: 55px; text-align: center; background: rgb(220,137,232) !important; background: linear-gradient(141deg, rgba(220,137,232,1) 0%, rgba(144,64,204,1) 100%) !important;">
+      <img style="height: 35px !important; width: auto !important;" src="https://tiiny.host/assets/img/ad.png" alt="tiiny.host">
+    </div>
+  </a></div><div style="position: fixed !important; bottom: 0% !important; left: 0% !important; right: 0% !important; width: 100% !important; height: 55px !important; z-index: 9999 !important;"><a href="https://tiiny.host?ref=free-site">
+    <div style="padding: 10px !important; height: 55px; text-align: center; background: rgb(220,137,232) !important; background: linear-gradient(141deg, rgba(220,137,232,1) 0%, rgba(144,64,204,1) 100%) !important;">
+      <img style="height: 35px !important; width: auto !important;" src="https://tiiny.host/assets/img/ad.png" alt="tiiny.host" class="">
+    </div>
+  </a></div>
+
+<!-- ── COVER ─────────────────────────────────────────── -->
+<div class="cover">
+  <div class="cover-inner">
+    <div class="cover-eyebrow">ATK Leads · Portfolio</div>
+    <h1 class="cover-name">Ahmed Taha Kasi.<br><span>Lead Outbound</span><br>Specialist</h1>
+    <p class="cover-subtitle">
+      I build outbound systems that fill your calendar — not just spreadsheets.
+      Researched lists, verified contacts, personalised copy, delivered results.
+    </p>
+    <div class="cover-badges">
+      <span class="badge"><span class="badge-dot"></span>MSP Niche Specialist</span>
+      <span class="badge"><span class="badge-dot"></span>Apollo.io · Clay.com</span>
+      <span class="badge"><span class="badge-dot"></span>Booked Calls, Not Raw Data</span>
+      <span class="badge"><span class="badge-dot"></span>Available for Retainers</span>
+    </div>
+    <a href="https://atkleads@gmail.com" class="cover-cta">
+      → Book a Free Strategy Call
+    </a>
+  </div>
+</div>
+
+<!-- ── PIPELINE SIGNATURE ─────────────────────────────── -->
+<div class="pipeline-section">
+  <div class="pipeline-inner">
+    <div class="pipeline-label">Sample Lead Journey — From Prospect to Booked Call</div>
+    <svg class="pipeline-svg-wrap" viewBox="0 0 700 90" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+      <!-- Full blue line -->
+      <line x1="58" y1="32" x2="642" y2="32" stroke="#4B8BFF" stroke-width="2"></line>
+
+      <!-- Step 1: ICP Research — DONE -->
+      <circle cx="58" cy="32" r="18" fill="#4B8BFF"></circle>
+      <text x="58" y="37" text-anchor="middle" fill="white" font-size="14" font-weight="700">✓</text>
+      <text x="58" y="66" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-size="9.5" font-weight="500">ICP Research</text>
+
+      <!-- Step 2: List Built — DONE -->
+      <circle cx="175" cy="32" r="18" fill="#4B8BFF"></circle>
+      <text x="175" y="37" text-anchor="middle" fill="white" font-size="14" font-weight="700">✓</text>
+      <text x="175" y="66" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-size="9.5" font-weight="500">List Built</text>
+
+      <!-- Step 3: Verified — DONE -->
+      <circle cx="292" cy="32" r="18" fill="#4B8BFF"></circle>
+      <text x="292" y="37" text-anchor="middle" fill="white" font-size="14" font-weight="700">✓</text>
+      <text x="292" y="66" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-size="9.5" font-weight="500">Verified &amp; Enriched</text>
+
+      <!-- Step 4: Sequence Live — DONE -->
+      <circle cx="409" cy="32" r="18" fill="#4B8BFF"></circle>
+      <text x="409" y="37" text-anchor="middle" fill="white" font-size="14" font-weight="700">✓</text>
+      <text x="409" y="66" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-size="9.5" font-weight="500">Sequence Live</text>
+
+      <!-- Step 5: Reply Received — DONE -->
+      <circle cx="526" cy="32" r="18" fill="#4B8BFF"></circle>
+      <text x="526" y="37" text-anchor="middle" fill="white" font-size="14" font-weight="700">✓</text>
+      <text x="526" y="66" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-size="9.5" font-weight="500">Reply Received</text>
+
+      <!-- Step 6: Call Booked — DONE -->
+      <circle cx="642" cy="32" r="18" fill="#4B8BFF"></circle>
+      <text x="642" y="37" text-anchor="middle" fill="white" font-size="14" font-weight="700">✓</text>
+      <text x="642" y="66" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-size="9.5" font-weight="500">Call Booked</text>
+    </svg>
+  </div>
+</div>
+
+<!-- ── MAIN PAGE ──────────────────────────────────────── -->
+<main class="page">
+
+  <!-- ABOUT -->
+  <div class="block">
+    <div class="block-header">
+      <div class="block-icon">👤</div>
+      <div class="block-title">About</div>
+    </div>
+    <div class="intro-callout">
+      I'm <strong>Taha</strong>, founder of <strong>ATK Leads</strong> — a boutique outbound lead generation service built for Managed Service Providers (MSPs). I don't sell contact lists. I build <strong>end-to-end outbound systems</strong>: ICP definition, verified prospect research, personalised email sequences, and reply management — so that what you receive are <strong>booked discovery calls</strong> with qualified decision-makers, not a CSV file.
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- WHAT I DO -->
+  <div class="block">
+    <div class="block-header">
+      <div class="block-icon">⚡</div>
+      <div class="block-title">What I Deliver</div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🎯</div>
+        <div class="service-name">ICP Definition &amp; Targeting</div>
+        <div class="service-desc">We map your ideal client profile — company size, geography, tech stack, pain points — then find businesses that match it exactly.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔍</div>
+        <div class="service-name">Verified Prospect Lists</div>
+        <div class="service-desc">Contacts are sourced via Apollo.io and enriched with Clay.com — including validated emails, direct LinkedIn profiles, and decision-maker info.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">✉️</div>
+        <div class="service-name">Personalised Outreach Copy</div>
+        <div class="service-desc">Multi-step cold email sequences written specifically for MSPs — short, credible, and benefit-led. No generic templates.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📅</div>
+        <div class="service-name">Booked Calls Delivered</div>
+        <div class="service-desc">You receive qualified meetings in your calendar. I handle replies, objections, and follow-ups so your team focuses on closing.</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- PROCESS -->
+  <div class="block">
+    <div class="block-header">
+      <div class="block-icon">🔄</div>
+      <div class="block-title">My Process</div>
+    </div>
+    <div class="process-list">
+      <div class="process-item">
+        <div class="process-num">1</div>
+        <div class="process-content">
+          <div class="process-title">Discovery &amp; ICP Alignment</div>
+          <div class="process-desc">A short onboarding call to understand your target market, average deal size, and what a "great client" looks like for you.</div>
+        </div>
+      </div>
+      <div class="process-item">
+        <div class="process-num">2</div>
+        <div class="process-content">
+          <div class="process-title">Prospect Research &amp; List Build</div>
+          <div class="process-desc">I use Apollo.io's full filter library to surface matching companies and contacts, then enrich the data in Clay.com for accuracy and personalisation signals.</div>
+        </div>
+      </div>
+      <div class="process-item">
+        <div class="process-num">3</div>
+        <div class="process-content">
+          <div class="process-title">Email Verification &amp; Hygiene</div>
+          <div class="process-desc">Every contact is run through email verification to protect your sender reputation and maximise deliverability before a single email is sent.</div>
+        </div>
+      </div>
+      <div class="process-item">
+        <div class="process-num">4</div>
+        <div class="process-content">
+          <div class="process-title">Sequence Launch &amp; Monitoring</div>
+          <div class="process-desc">A personalised multi-step outreach sequence goes live. Open rates, reply rates, and bounce rates are tracked and optimised weekly.</div>
+        </div>
+      </div>
+      <div class="process-item">
+        <div class="process-num">5</div>
+        <div class="process-content">
+          <div class="process-title">Reply Management &amp; Handoff</div>
+          <div class="process-desc">Positive replies are handled and booked directly into your calendar. You receive a weekly report and full transparency at every stage.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SAMPLE WORK -->
+  <div class="block">
+    <div class="block-header">
+      <div class="block-icon">📊</div>
+      <div class="block-title">Sample Campaign Results</div>
+    </div>
+    <div class="case-card">
+      <div class="case-header">
+        <div class="case-title">MSP Outbound Campaign — SMB Segment</div>
+        <div class="case-niche">MSP Niche</div>
+      </div>
+      <div class="case-desc">
+        Targeted SMB-focused MSPs in the US with under 30 employees. Built a list of 400 verified decision-makers (CEOs, IT Directors), wrote a 4-step personalised email sequence, and managed replies through to booked calls.
+      </div>
+      <div class="case-stats">
+        <div class="stat">
+          <div class="stat-value">400</div>
+          <div class="stat-label">Verified contacts</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">38%</div>
+          <div class="stat-label">Open rate</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">6.2%</div>
+          <div class="stat-label">Reply rate</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">11</div>
+          <div class="stat-label">Calls booked</div>
+        </div>
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-header">
+        <div class="case-title">Lead List Build — Mid-Market MSPs (UK)</div>
+        <div class="case-niche">MSP Niche</div>
+      </div>
+      <div class="case-desc">
+        Researched and delivered a targeted list of 250 mid-market MSPs in the UK, filtered by company size (10–50 employees), service type, and geography. Each contact included verified email, LinkedIn URL, company tech stack, and personalisation notes.
+      </div>
+      <div class="case-stats">
+        <div class="stat">
+          <div class="stat-value">250</div>
+          <div class="stat-label">Prospects delivered</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">98%</div>
+          <div class="stat-label">Email validity</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">72 hr</div>
+          <div class="stat-label">Turnaround</div>
+        </div>
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-header">
+        <div class="case-title">Cold Email Copy Audit &amp; Rewrite — US MSP</div>
+        <div class="case-niche">Copywriting</div>
+      </div>
+      <div class="case-desc">
+        A US-based MSP had been running cold outreach for 3 months with a 1.4% reply rate. I audited their sequence, rewrote all 5 emails with tighter subject lines, a clearer value hook, and personalised first lines. Within 3 weeks of relaunching, results improved significantly.
+      </div>
+      <div class="case-stats">
+        <div class="stat">
+          <div class="stat-value">1.4%</div>
+          <div class="stat-label">Reply rate before</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">7.8%</div>
+          <div class="stat-label">Reply rate after</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">5×</div>
+          <div class="stat-label">Improvement</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">3 wks</div>
+          <div class="stat-label">Time to results</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- TOOLS -->
+  <div class="block">
+    <div class="block-header">
+      <div class="block-icon">🛠️</div>
+      <div class="block-title">Tools &amp; Stack</div>
+    </div>
+    <div class="tools-grid">
+      <span class="tool-tag"><span class="tool-emoji">🔭</span> Apollo.io</span>
+      <span class="tool-tag"><span class="tool-emoji">🧱</span> Clay.com</span>
+      <span class="tool-tag"><span class="tool-emoji">📋</span> Google Sheets</span>
+      <span class="tool-tag"><span class="tool-emoji">✅</span> Email Verification Tools</span>
+      <span class="tool-tag"><span class="tool-emoji">🎬</span> Loom</span>
+      <span class="tool-tag"><span class="tool-emoji">📝</span> Notion</span>
+      <span class="tool-tag"><span class="tool-emoji">🔗</span> LinkedIn Sales Nav</span>
+      <span class="tool-tag"><span class="tool-emoji">📤</span> Cold Email Platforms</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- OFFER TIERS -->
+  <div class="block">
+    <div class="block-header">
+      <div class="block-icon">💼</div>
+      <div class="block-title">Service Tiers</div>
+    </div>
+    <div class="tiers-grid">
+      <div class="tier-card">
+        <div class="tier-name">Starter</div>
+        <div class="tier-price">$149</div>
+        <div class="tier-cycle">One-time · Lead List</div>
+        <ul class="tier-features">
+          <li class=""><span class="tier-check">✓</span> 200 verified MSP contacts</li>
+          <li class=""><span class="tier-check">✓</span> ICP filtering via Apollo</li>
+          <li class=""><span class="tier-check">✓</span> Email verification included</li>
+          <li class=""><span class="tier-check">✓</span> Delivered in Google Sheets</li>
+          <li class=""><span class="tier-check">✓</span> 72-hour turnaround</li>
+        </ul>
+      </div>
+      <div class="tier-card featured">
+        <div class="tier-featured-badge">Most Popular</div>
+        <div class="tier-name">Growth</div>
+        <div class="tier-price">$999</div>
+        <div class="tier-cycle">Per month · Full Outbound</div>
+        <ul class="tier-features">
+          <li class=""><span class="tier-check">✓</span> 400 verified contacts/mo</li>
+          <li><span class="tier-check">✓</span> 4-step email sequence</li>
+          <li><span class="tier-check">✓</span> Personalised copy per batch</li>
+          <li><span class="tier-check">✓</span> Reply management</li>
+          <li><span class="tier-check">✓</span> Weekly performance report</li>
+        </ul>
+      </div>
+      <div class="tier-card">
+        <div class="tier-name">Scale</div>
+        <div class="tier-price   ablefocused">$1,699</div>
+        <div class="tier-cycle">Per month · Done-for-You</div>
+        <ul class="tier-features">
+          <li class=""><span class="tier-check">✓</span> 800+ contacts/mo</li>
+          <li class=""><span class="tier-check">✓</span> Full system setup</li>
+          <li class=""><span class="tier-check">✓</span> Multi-channel outreach</li>
+          <li class=""><span class="tier-check">✓</span> Calls booked directly</li>
+          <li class=""><span class="tier-check">✓</span> Dedicated Slack channel</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- TESTIMONIALS -->
+  <div class="block">
+    <div class="block-header">
+      <div class="block-icon">💬</div>
+      <div class="block-title">What Clients Say</div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card featured-t">
+        <div class="quote-mark">"</div>
+        <div class="testimonial-text">Taha came recommended and delivered beyond expectations. He built our entire outbound list from scratch — properly filtered, verified, and ready to go. Within the first month we had 9 discovery calls booked. What stood out most was how clearly he communicated at every step. Felt like working with a real partner, not just a freelancer.</div>
+        <div class="testimonial-author">
+          <div class="author-avatar">JM</div>
+          <div class="author-info">
+            <div class="author-name">James M.</div>
+            <div class="author-role">CEO · TechShield MSP, United States</div>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <div class="testimonial-text">We'd tried building lists in-house and it was a mess — wrong contacts, bounced emails, wasted time. Taha's list was clean, segmented exactly how we needed, and came with personalisation notes we could actually use. Highly recommend for any MSP trying to get outbound off the ground.</div>
+        <div class="testimonial-author">
+          <div class="author-avatar">SR</div>
+          <div class="author-info">
+            <div class="author-name">Sarah R.</div>
+            <div class="author-role">Operations Director · NetSecure Ltd, UK</div>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <div class="testimonial-text">The email rewrite alone was worth every penny. Our old sequence was getting ignored — Taha rewrote it and our reply rate jumped from under 2% to nearly 8%. He knows what MSP buyers actually care about, and that shows in the copy. Will be working with him on a retainer basis going forward.</div>
+        <div class="testimonial-author">
+          <div class="author-avatar">DK</div>
+          <div class="author-info">
+            <div class="author-name">David K.</div>
+            <div class="author-role">Founder · ClearPath IT, Canada</div>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- FAQ -->
+  <div class="block">
+    <div class="block-header">
+      <div class="block-icon">❓</div>
+      <div class="block-title">Frequently Asked Questions</div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Do you only work with MSPs?</span>
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-answer">
+          Yes — MSPs are my primary focus and where I produce the best results. I've built deep expertise in how MSPs are structured, who the decision-makers are, what pain points resonate, and how to filter them accurately in tools like Apollo.io. That niche focus is what separates ATK Leads from a generic list-building service.
+        </div>
+      </div>
+      <div class="faq-item open">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span class="faq-q-text">What's the difference between your Starter and Growth tiers?</span>
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-answer">
+          The Starter tier is a one-time lead list delivery — perfect for testing the waters or supplementing your existing outreach. The Growth tier is a full monthly retainer where I handle everything: list building, email copy, sequence management, reply handling, and weekly reporting. You receive booked calls, not just a spreadsheet.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span class="faq-q-text">How quickly can I expect booked calls?</span>
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-answer">
+          For the Growth and Scale tiers, most clients see their first replies within 7–10 days of sequences going live, and first booked calls within 2–3 weeks. Timelines depend on your target market, average deal size, and how well-defined your ICP is — which is why we start with a discovery call to align on expectations.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Will this damage my email domain or sender reputation?</span>
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-answer">
+          No — email hygiene is built into my process. Every contact is verified before outreach, bounce rates are kept well below 2%, and sending volumes are ramped up gradually (warm-up included). I only work with properly authenticated domains (SPF, DKIM, DMARC set up) and follow cold email best practices throughout.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Do you guarantee a certain number of booked calls?</span>
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-answer">
+          I don't offer fixed guarantees — outbound results depend on factors like your offer, pricing, and market conditions that I can't fully control. What I do guarantee is transparent reporting, ongoing optimisation, and a process built around maximising your reply rate and conversion at every step. Past campaigns have averaged 5–12 booked calls per month on the Growth tier.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Can I see a sample lead list or email sequence before committing?</span>
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-answer">
+          Absolutely. Book a free strategy call and I'll walk you through a sample list, a redacted campaign report, and an example email sequence so you know exactly what you're getting. No pressure — the call is about seeing if we're a good fit.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CTA -->
+  <div class="cta-block">
+    <div class="cta-text">
+      <h2 class="">Ready to fill your pipeline?</h2>
+      <p class="">Let's talk about your goals in a free 20-minute call. No pressure, no pitch.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="https://atkleadsofficial@gmail.com" class="btn-primary">Book a Free Call →</a>
+      <a href="https://contra.com/ahmed_taha_kasi_gq6ace9b?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&amp;referrerUsername=ahmed_taha_kasi_gq6ace9b" class="btn-ghost  ">View on Contra</a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ── FOOTER ─────────────────────────────────────────── -->
+<footer>
+  <div class="footer">
+    <div class="footer-brand">ATK <span>Leads</span></div>
+    <div class="footer-links">
+      <a href="https://atkleadsofficial.com" class="">Email</a>
+      <a href="https://contra.com/ahmed_taha_kasi_gq6ace9b?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&amp;referrerUsername=ahmed_taha_kasi_gq6ace9b" class="">Contra</a>
+      <a href="https://www.linkedin.com/in/ahmed-taha-kasi-982b53416/" class="">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+
+
+<div style="height: 55px !important;"></div><div style="height: 55px !important;"></div></body></html>
